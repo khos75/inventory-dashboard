@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Inventory Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
+
   <div class="container mx-auto p-6 max-w-7xl">
     <!-- Header -->
-    <h1 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6 flex flex-wrap items-center">
       📊 My Inventory Dashboard
       <span class="ml-4 text-sm text-gray-500">Last Updated: 02:28 AM PKT, July 06, 2025</span>
     </h1>
@@ -22,23 +23,35 @@
       </div>
       <div class="bg-white p-4 rounded-lg shadow-md">
         <p class="text-gray-600">Total Stock</p>
-        <p class="text-2xl font-semibold text-gray-900">20,770</p>
+        <p class="text-2xl font-semibold text-green-700">20,770</p>
       </div>
       <div class="bg-white p-4 rounded-lg shadow-md">
         <p class="text-gray-600">Used Stock</p>
-        <p class="text-2xl font-semibold text-gray-900">8,560</p>
+        <p class="text-2xl font-semibold text-yellow-600">8,560</p>
       </div>
       <div class="bg-white p-4 rounded-lg shadow-md">
         <p class="text-gray-600">Remaining Stock</p>
-        <p class="text-2xl font-semibold text-gray-900">12,210</p>
+        <p class="text-2xl font-semibold text-blue-700">12,210</p>
       </div>
     </div>
 
     <!-- Embedded Report -->
     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <h2 class="text-xl font-semibold text-gray-900 p-4 border-b">Inventory Report</h2>
-      <iframe width="100%" height="600" src="https://lookerstudio.google.com/embed/reporting/d81cfea9-51b1-4a37-8570-f5aecbc1fbe8/page/page_12345" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+      <div class="p-4 border-b flex items-center justify-between">
+        <h2 class="text-xl font-semibold text-gray-900">Inventory Report</h2>
+        <span class="text-xs text-green-600 italic">Formula Fixed on July 6, 2025</span>
+      </div>
+      <iframe 
+        width="100%" 
+        height="600" 
+        src="https://lookerstudio.google.com/embed/reporting/d81cfea9-51b1-4a37-8570-f5aecbc1fbe8/page/page_12345" 
+        frameborder="0" 
+        style="border:0" 
+        allowfullscreen 
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+      </iframe>
     </div>
   </div>
+
 </body>
 </html>
